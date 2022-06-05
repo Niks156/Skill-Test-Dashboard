@@ -8,9 +8,9 @@ import QuestionAnalysis from "./QuestionAnalysis";
 import SyllabusAnalysis from "./SyllabusAnalysis";
 
 export default function SkillStats() {
-  const [rank, setrank] = useState(0);
-  const [percent, setpercent] = useState(0);
-  const [correctans, setcorrectans] = useState(0);
+  const [rank, setrank] = useState(12000);
+  const [percent, setpercent] = useState(37);
+  const [correctans, setcorrectans] = useState(7);
   const styles = {
     margin: "28px",
   };
@@ -21,7 +21,7 @@ export default function SkillStats() {
       </Typography>
 
       <Grid container spacing={2}>
-        <Grid item xs={6} md={7}>
+        <Grid item xs={6} md={8}>
           <SkillName
             setrank={setrank}
             setpercent={setpercent}
@@ -33,9 +33,9 @@ export default function SkillStats() {
           <QuickStats rank={rank} percent={percent} correctans={correctans} />
           <ComparisonChart />
         </Grid>
-        <Grid item xs={6} md={5} sx={{ marginLeft: 0.001 }}>
+        <Grid item xs={6} md={4} sx={{ marginLeft: 0.001 }}>
           <SyllabusAnalysis />
-          <QuestionAnalysis correctans={correctans}/>
+          <QuestionAnalysis correctans={correctans} />
         </Grid>
       </Grid>
     </div>

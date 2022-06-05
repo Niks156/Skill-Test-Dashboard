@@ -15,7 +15,7 @@ const Navbar = () => {
       sx={{
         background: "#FFFFFF",
         color: "black",
-        padding: "7px 0",
+        padding: "3px 0",
         borderBottom: 1,
         borderColor: "#DCDCDC",
         boxShadow: 0,
@@ -46,13 +46,13 @@ const Navbar = () => {
           </Typography>
           <Box
             sx={{
-              border: 1,
+              border: 0.1,
               borderColor: "#DCDCDC",
               borderRadius: "13px",
               flexGrow: 0,
               marginRight: "15px",
               display: "flex",
-              padding: "6px",
+              padding: "5px",
             }}
           >
             <Box>

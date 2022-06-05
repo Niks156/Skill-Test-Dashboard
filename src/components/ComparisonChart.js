@@ -9,15 +9,17 @@ export default function ComparisonChart() {
       borderRadius: 10,
       marginLeft: 3.3,
       height: "100%",
-      width: 697,
+      width: 808,
+      padding:"10px 25px 10px 25px"
     },
   };
+  
 
   return (
     <div>
       <div style={styles.bordersx}>
         <h3>Comparison chart</h3>
-        <LineChart/>
+        <LineChart />
       </div>
     </div>
   );

@@ -15,10 +15,10 @@ export default function Dashboard() {
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <Grid item xs={6} md={2}>
+          <Grid item xs={6} md={1.9}>
             <SideNav />
           </Grid>
-          <Grid item xs={6} md={10}>
+          <Grid item xs={6} md={10.1}>
             <SkillStats />
           </Grid>
         </Grid>

@@ -7,12 +7,10 @@ export default function QuickStats(props) {
 
   const styles = {
     bordersx: {
-      marginTop: 18,
+      marginTop: 15,
       border: "1px solid #DCDCDC",
       borderRadius: 10,
-      paddingLeft: 38,
-      paddingTop: 13,
-      overflow: "hidden",
+      padding: "13px 5px 3px 45px",
     },
     parentflex: {
       display: "flex",
@@ -24,8 +22,8 @@ export default function QuickStats(props) {
     ul: {
       listStyle: "none",
       borderRight: "1px solid grey",
-      paddingRight: 35,
-      marginLeft: 1,
+      paddingRight: 65,
+      marginTop: -3,
     },
     img: {
       width: 50,
@@ -41,7 +39,7 @@ export default function QuickStats(props) {
       <Typography style={{ marginLeft: -11 }} variant="h6" color="initial">
         Quick Statistics
       </Typography>
-      <Grid xs={12} sx={{ marginY: 4 }} sm container>
+      <Grid xs={12} sx={{ marginTop: 3.4, marginBottom: 0.8 }} sm container>
         <Grid sx={styles.parentflex} item xs container spacing={2}>
           <div style={styles.flex}>
             <img
@@ -64,7 +62,7 @@ export default function QuickStats(props) {
             />
             <ul style={styles.ul}>
               <li style={{ fontSize: 24 }}>
-                <b>{percent}</b>
+                <b>{percent}%</b>
               </li>
               <li style={styles.txtmuted}>PERCENTILE</li>
             </ul>
@@ -75,9 +73,9 @@ export default function QuickStats(props) {
               style={styles.img}
               src={require("../img/correct.png")}
             />
-            <ul style={{ listStyle: "none", marginLeft: 18, marginTop: 3 }}>
+            <ul style={{ listStyle: "none", marginTop: -3 }}>
               <li style={{ fontSize: 24 }}>
-                <b>{correctans}</b>
+                <b>{correctans}/15</b>
               </li>
               <li style={styles.txtmuted}>CORRECT ANSWERS</li>
             </ul>

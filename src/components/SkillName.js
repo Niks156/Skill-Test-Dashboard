@@ -4,7 +4,8 @@ import Typography from "@mui/material/Typography";
 import UpdateModal from "./UpdateModal";
 
 export default function SkillName(props) {
-  const { rank, percent, correctans, setrank, setpercent, setcorrectans } = props;
+  const { rank, percent, correctans, setrank, setpercent, setcorrectans } =
+    props;
   const styles = {
     bordersx: {
       marginTop: 18,
@@ -12,7 +13,7 @@ export default function SkillName(props) {
       borderRadius: 10,
       marginLeft: 3.3,
       paddingBottom: 10,
-      width: 697,
+      width: 808,
     },
   };
   return (
@@ -32,7 +33,7 @@ export default function SkillName(props) {
               <Typography gutterBottom variant="h5" component="h3">
                 Hypertext Markup Language
               </Typography>
-              <Typography variant="subtitle5" sx={{ color: "#949494" }}>
+              <Typography variant="subtitle2" sx={{ color: "#949494" }}>
                 Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
               </Typography>
             </Grid>
@@ -43,8 +44,8 @@ export default function SkillName(props) {
               setpercent={setpercent}
               setcorrectans={setcorrectans}
               rank={rank}
-            percent={percent}
-            correctans={correctans}
+              percent={percent}
+              correctans={correctans}
             />
           </Grid>
         </Grid>
