@@ -1,0 +1,10 @@
+.list {
+    padding: 30px 10px;
+    list-style: none;
+}
+.list li {
+    margin-bottom: 18px;
+}
+.list img {
+    padding-right: 14px;
+}
