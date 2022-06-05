@@ -14,7 +14,7 @@ export default function SideNav() {
   return (
     <div style={styles.navsx}>
       <div className="list">
-        <div className="my-4">
+        <div className="my-3 py-2 hover">
           <img
             src={require("../img/dashboard.png")}
             className="me-3"
@@ -22,11 +22,11 @@ export default function SideNav() {
           />
           Dashboard
         </div>
-        <div className="my-4 py-2 active">
+        <div className="my-3 py-2 active">
           <img src={require("../img/skill.png")} className="me-3" alt="icon" />
           Skill Test
         </div>
-        <div className="my-4">
+        <div className="my-3 py-2 hover">
           <img
             src={require("../img/internship.png")}
             className="me-3"
