@@ -15,7 +15,7 @@ const Navbar = () => {
       sx={{
         background: "#FFFFFF",
         color: "black",
-        padding: "3px 0",
+        padding: "5px 0",
         borderBottom: 1,
         borderColor: "#DCDCDC",
         boxShadow: 0,
@@ -36,13 +36,11 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            c
             <img
               alt="cuvette"
-              style={{ width: 19, height: 27, paddingTop: 7 }}
-              src={require("../img/logo.png")}
+              style={{ width: 125, height: 30 }}
+              src={require("../img/mainlogo.png")}
             />
-            vette
           </Typography>
           <Box
             sx={{
