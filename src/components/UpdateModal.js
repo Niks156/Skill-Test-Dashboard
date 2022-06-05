@@ -75,7 +75,7 @@ export default function BasicModal(props) {
               />
             </Typography>
           </Box>
-          <hr />
+          <hr style={{height:0.1}}/>
           <Box style={style.flexi}>
             <img
               alt="img1"
@@ -139,7 +139,7 @@ export default function BasicModal(props) {
               }}
             />
           </Box>
-          <hr />
+          <hr style={{height:0.1}}/>
           <div style={{ display: "flex", flexDirection: "row-reverse" }}>
             <Button onClick={handleClose} style={style.btn} variant="contained">
               {"->"} save
